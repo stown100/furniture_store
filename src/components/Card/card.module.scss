@@ -1,0 +1,52 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 379px;
+  &Icons {
+    display: flex;
+    position: absolute;
+    gap: 21px;
+    top: 10px;
+    right: 10px;
+    &Icon {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  &Img {
+    width: 100%;
+    height: 250px;
+    margin: 0 0 10px;
+  }
+  &Title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 8px;
+  }
+  &Description {
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 12px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-overflow: ellipsis;
+  }
+  &Price {
+    color: #050505;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

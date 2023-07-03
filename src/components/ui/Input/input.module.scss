@@ -1,0 +1,19 @@
+.Input {
+  border: none;
+  border-bottom: 1px solid #cacdd8;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 3px;
+  min-width: 288px;
+  &::placeholder {
+    color: #a9abb4;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+  }
+}

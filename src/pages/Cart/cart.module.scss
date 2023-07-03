@@ -1,0 +1,31 @@
+.Cart {
+  display: flex;
+  justify-content: space-between;
+  &Content {
+    width: 100%;
+    margin: 0 33px 0 0;
+    &Buttons {
+      display: flex;
+      gap: 7px;
+      margin: 50px 0 0;
+    }
+  }
+}
+
+.Preview {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cacdd8;
+  padding: 0 27px 14px 3px;
+}
+
+@media (max-width: 1200px) {
+  .Cart {
+    flex-direction: column;
+    &Content {
+      &Buttons {
+        margin: 32px 0 48px;
+      }
+    }
+  }
+}

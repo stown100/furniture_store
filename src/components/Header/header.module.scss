@@ -1,0 +1,64 @@
+.Header {
+  background: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  margin: 0 0 32px;
+  &Title {
+    color: #fff;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    & > a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+
+.NavList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  &Element {
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffffff;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+    }
+    &_mobile {
+      display: none;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    & > a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .Header {
+    padding: 49.5px 16px 17.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .NavList {
+    &Element {
+      display: none;
+      &_mobile {
+        display: block;
+      }
+    }
+  }
+}

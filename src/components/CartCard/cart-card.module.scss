@@ -1,0 +1,102 @@
+.Card {
+  display: flex;
+  padding: 25px 0;
+  border-bottom: 1px solid #cacdd8;
+  position: relative;
+  &:last-of-type {
+    border-bottom: none;
+    padding: 25px 0 0;
+  }
+  &Img {
+    width: 173px;
+    height: 173px;
+    margin: 0 31px 0 0;
+  }
+  &Content {
+    max-width: 276px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &Title {
+      color: #000;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+      margin: 0;
+    }
+    &Description {
+      color: #888;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      text-overflow: ellipsis;
+    }
+    &Price {
+      color: #050505;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &Buttons {
+      display: flex;
+      gap: 30px;
+      &Button {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  &Counter {
+    width: 43px;
+    height: 51px;
+    border-radius: 6px;
+    background: #f7f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 14px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    &Count {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 210%;
+    }
+    &Arrows {
+      display: flex;
+      flex-direction: column;
+      &Arrow {
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        border-radius: 5px;
+        &:hover {
+          background-color: #ececec;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Card {
+    height: 191px;
+    &Img {
+      display: none;
+    }
+  }
+}

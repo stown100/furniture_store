@@ -1,0 +1,46 @@
+.Form {
+  border-radius: 20px;
+  background: #f7f6f6;
+  padding: 42px 44px 148px 27px;
+  max-width: 379px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &Title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 35px;
+  }
+  &Element {
+    margin: 0 0 41px;
+    position: relative;
+    &:last-of-type {
+      margin: 0 0 64px;
+    }
+    &Error {
+      color: red;
+      font-size: 12px;
+      line-height: 14px;
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &Text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    &Span {
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Form {
+    padding: 42px 27px 148px;
+  }
+}
